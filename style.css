@@ -3,7 +3,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--bgcolor);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+background-color: var(--bgcolor);
 font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -45,6 +52,7 @@ grid-row-gap: 5px;
 .div1 {
   grid-area: 1 / 2 / 2 / 5;
 }
+
 .div2 {
   grid-area: 2 / 2 / 3 / 3;
   display: flex;
@@ -53,40 +61,49 @@ grid-row-gap: 5px;
   font-weight: 100;
   font-family: 'Open Sans', sans-serif;
 }
+
 .div3 {
   grid-area: 2 / 3 / 3 / 4;
   display: flex;
   align-items: center;
   font-weight: bold;
 }
+
 .div4 {
   grid-area: 2 / 4 / 3 / 5;
   display: flex;
   align-items: center;
   font-weight: bold;
 }
+
 .div5 {
   grid-area: 3 / 2 / 5 / 3;
 }
+
 .div6 {
   grid-area: 3 / 3 / 5 / 4;
 }
+
 .div7 {
   grid-area: 3 / 4 / 4 / 5;
   display: flex;
    gap: 20px;
 }
+
 .div8 {
   grid-area: 4 / 4 / 5 / 5;
 }
+
 .div9 {
   grid-area: 5 / 2 / 6 / 3;
   display: flex;
   justify-content: space-between;
 }
+
 .div10 {
   grid-area: 5 / 3 / 6 / 4;
 }
+
 .div11 {
   grid-area: 5 / 4 / 6 / 5;
 }
@@ -100,7 +117,6 @@ grid-row-gap: 5px;
 footer a {
   color: #fff;
   text-decoration: none;
-
 }
 
 .news__btn {
@@ -150,9 +166,6 @@ input[type="email"] {
 
 /* html set */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap');
-html{
-    scroll-behavior: smooth;
-}
 
 .container{
     width:75%;
@@ -241,5 +254,5 @@ html{
 }
 
 .lo img{
-    width: 150px;
+    width: 150px;  
 }
