@@ -25,7 +25,7 @@ footer {
     height: 397px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows:  0.8fr repeat(3, 1fr) 1.2fr;
-    grid-column-gap: 5px;
+    grid-column-gap: 0.8%;
 grid-row-gap: 5px;
     border: 1px solid black;
   }
@@ -43,6 +43,7 @@ grid-row-gap: 5px;
 }
 .div2 {
   grid-area: 2 / 2 / 3 / 3;
+  display: flex;
 }
 .div3 {
   grid-area: 2 / 3 / 3 / 4;
@@ -58,6 +59,8 @@ grid-row-gap: 5px;
 }
 .div7 {
   grid-area: 3 / 4 / 4 / 5;
+  display: flex;
+   gap: 20px;
 }
 .div8 {
   grid-area: 4 / 4 / 5 / 5;
@@ -78,4 +81,39 @@ grid-row-gap: 5px;
   padding: 0;
   margin: 0;
   font-size: 0.9em;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.news__btn {
+  border: none;
+  height: 34px;
+  outline: none;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+  width: 50px;
+}
+
+input[type="email"] {
+  border: 0;
+  outline: 0;
+  border: 1px solid #8f94a1;
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  color: #fff;
+}
+
+#fbutton {
+  height: 20px;
+  width: 20px;
+}
+
+#flogo {
+  
 }
