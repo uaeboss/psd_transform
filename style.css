@@ -5,6 +5,8 @@ body {
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 footer {
   background-color: #fff;
 }
@@ -44,12 +46,22 @@ grid-row-gap: 5px;
 .div2 {
   grid-area: 2 / 2 / 3 / 3;
   display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
 }
 .div3 {
   grid-area: 2 / 3 / 3 / 4;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
 .div4 {
   grid-area: 2 / 4 / 3 / 5;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
 .div5 {
   grid-area: 3 / 2 / 5 / 3;
@@ -107,6 +119,7 @@ input[type="email"] {
   height: 30px;
   background-color: transparent;
   color: #fff;
+  text-align: center;
 }
 
 #fbutton {
@@ -115,5 +128,15 @@ input[type="email"] {
 }
 
 #flogo {
-  
+  height: 55px;
+  margin-right: 15px;
+  filter: grayscale(1);
+}
+
+#copyright {
+  font-size: 0.7em;
+}
+
+.div8 a {
+  target="_blank"
 }
