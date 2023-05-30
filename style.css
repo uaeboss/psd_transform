@@ -3,4 +3,243 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--bgcolor);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+footer {
+  background-color: #fff;
+}
+
+#footer {
+  background-image: url(images/bgk-footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 397px;
+  width: 100%;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.gridparent {
+    display: grid;
+    width: 1600px;
+    height: 397px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:  0.8fr repeat(3, 1fr) 1.2fr;
+    grid-column-gap: 0.8%;
+grid-row-gap: 5px;
+    border: 1px solid black;
+  }
+
+
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.div1 {
+  grid-area: 1 / 2 / 2 / 5;
+}
+.div2 {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+}
+.div3 {
+  grid-area: 2 / 3 / 3 / 4;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.div4 {
+  grid-area: 2 / 4 / 3 / 5;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.div5 {
+  grid-area: 3 / 2 / 5 / 3;
+}
+.div6 {
+  grid-area: 3 / 3 / 5 / 4;
+}
+.div7 {
+  grid-area: 3 / 4 / 4 / 5;
+  display: flex;
+   gap: 20px;
+}
+.div8 {
+  grid-area: 4 / 4 / 5 / 5;
+}
+.div9 {
+  grid-area: 5 / 2 / 6 / 3;
+  display: flex;
+  justify-content: space-between;
+}
+.div10 {
+  grid-area: 5 / 3 / 6 / 4;
+}
+.div11 {
+  grid-area: 5 / 4 / 6 / 5;
+}
+
+#pfooter {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.news__btn {
+  border: none;
+  height: 34px;
+  outline: none;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+  width: 50px;
+}
+
+input[type="email"] {
+  border: 0;
+  outline: 0;
+  border: 1px solid #8f94a1;
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+#fbutton {
+  height: 20px;
+  width: 20px;
+}
+
+#flogo {
+  height: 55px;
+  margin-right: 15px;
+  filter: grayscale(1);
+}
+
+#copyright {
+  font-size: 0.7em;
+}
+
+/* mack var */
+:root{
+    --blubut: #3cebc2;
+    --bgcolor: #fff;
+    --text-in-dark: #f6f6f6;
+    --text-in-light: #202020;
+    --perp: #3A2E60 ;
+}
+
+/* html set */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width:75%;
+    margin: 0 auto;
+}
+
+.main-2 {
+  /* background-color: rgb(87, 63, 63); */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 80vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.main-2-forms{
+  padding: 50px 0;
+}
+
+.forms-titel{
+  /* text-align: center; */
+  margin-bottom: 30px;
+  color: var(--text-in-light);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#forms{
+  display: flex;
+  flex-direction: column;
+}
+
+#forms .text-a{
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  outline:none;
+  box-shadow: 1px 1px 5px #949494;
+  border-radius: 4px;
+}
+
+.text-area {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 150px;
+  border: none;
+  padding: 10px;
+  outline:none;
+  box-shadow: 1px 1px 5px #949494;
+  border-radius: 4px;
+}
+.sub-but{
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--blubut) ;
+  padding: 10px;
+  outline:none;
+  box-shadow: 1px 1px 5px var(--blubut);
+  border-radius: 4px;
+  background-color: #fff;
+  color: var(--blubut);
+  cursor: pointer;
+  font-weight: 600;
+}
+.clients{
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  height: 81%;
+
+  
+}
+.clint-titel{
+  margin-bottom: 30px;
+  color: var(--text-in-light);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  
+}
+.logos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+    grid-gap: 40px;
+}
+
+.lo img{
+    width: 150px;
 }
