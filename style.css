@@ -4,3 +4,78 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+footer {
+  background-color: #fff;
+}
+
+#footer {
+  background-image: url(images/bgk-footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 397px;
+  width: 100%;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.gridparent {
+    display: grid;
+    width: 1600px;
+    height: 397px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:  0.8fr repeat(3, 1fr) 1.2fr;
+    grid-column-gap: 5px;
+grid-row-gap: 5px;
+    border: 1px solid black;
+  }
+
+
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.div1 {
+  grid-area: 1 / 2 / 2 / 5;
+}
+.div2 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div3 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div4 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.div5 {
+  grid-area: 3 / 2 / 5 / 3;
+}
+.div6 {
+  grid-area: 3 / 3 / 5 / 4;
+}
+.div7 {
+  grid-area: 3 / 4 / 4 / 5;
+}
+.div8 {
+  grid-area: 4 / 4 / 5 / 5;
+}
+.div9 {
+  grid-area: 5 / 2 / 6 / 3;
+  display: flex;
+  justify-content: space-between;
+}
+.div10 {
+  grid-area: 5 / 3 / 6 / 4;
+}
+.div11 {
+  grid-area: 5 / 4 / 6 / 5;
+}
+
+#pfooter {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
