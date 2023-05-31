@@ -503,7 +503,8 @@ Media Query
 ============= */
 
 
-@media (max-width: 651px){
+@media (max-width: 651px) {
+
   .container{
       width:90%;
       margin: 0 auto;
@@ -578,4 +579,4 @@ Media Query
   .ul-team li{
     margin: 1rem;
   }
-
+}
