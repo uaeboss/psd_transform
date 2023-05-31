@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+
 footer {
   background-color: #fff;
 }
@@ -9,78 +10,219 @@ footer {
   background-image: url(images/bgk-footer.png);
   background-repeat: no-repeat;
   background-position: center;
-  height: 397px;
-  width: 100%;
+  background-size: cover;
+  height: 400px;
+  width: 100vw;
   color: #fff;
   font-family: sans-serif;
 }
-
 .gridparent {
-    display: grid;
-    width: 1600px;
-    height: 397px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows:  0.8fr repeat(3, 1fr) 1fr;
-    grid-column-gap: 0.8%;
-grid-row-gap: 5px;
-    border: 1px solid black;
-  }
-
-
-.wrapper {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.8fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1.5fr 0.8fr 1.2fr;
+  grid-column-gap: 0.8%;
+  grid-row-gap: 5px;
+  grid-template-areas:
+    "blanktop blanktop blanktop blanktop blanktop"
+    "blankleft logo studio touch blankright"
+    "blankleft impres adress newsletter blankright"
+    "blankleft blankmid blankmid links blankright"
+    "blankleft help blankbot copyright blankright";
 }
 
-.div1 {
-  grid-area: 1 / 2 / 2 / 5;
-}
-.div2 {
-  grid-area: 2 / 2 / 3 / 3;
+
+.logo {
+  grid-area: logo;
   display: flex;
   align-items: center;
   font-size: 1.8em;
   font-weight: 100;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.div3 {
-  grid-area: 2 / 3 / 3 / 4;
+.studio {
+  grid-area: studio;
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-.div4 {
-  grid-area: 2 / 4 / 3 / 5;
+.touch {
+  grid-area: touch;
   display: flex;
   align-items: center;
   font-weight: bold;
 }
-.div5 {
-  grid-area: 3 / 2 / 5 / 3;
+.impres {
+  grid-area: impres;
 }
-.div6 {
-  grid-area: 3 / 3 / 5 / 4;
+.adress {
+  grid-area: adress;
 }
-.div7 {
-  grid-area: 3 / 4 / 4 / 5;
+.newsletter {
+  grid-area: newsletter;
   display: flex;
-   gap: 20px;
+  gap: 12px;
 }
-.div8 {
-  grid-area: 4 / 4 / 5 / 5;
+.links {
+  grid-area: links;
 }
-.div9 {
-  grid-area: 5 / 2 / 6 / 3;
+.help {
+  grid-area: help;
   display: flex;
   justify-content: space-between;
 }
-.div10 {
-  grid-area: 5 / 3 / 6 / 4;
+.copyright {
+  grid-area: copyright;
 }
-.div11 {
-  grid-area: 5 / 4 / 6 / 5;
+.blankleft {
+  grid-area: blankleft;
+}
+.blanktop {
+  grid-area: blanktop;
+}
+.blankright {
+  grid-area: blankright;
+}
+.blankmid {
+  grid-area: blankmid;
+}
+.blankbot {
+  grid-area: blankbot;
+}
+
+@media (max-width: 1500px) {
+  #footer {
+  }
+
+  .gridparent {
+    height: 100%;
+    grid-template-columns: 0.5fr 1fr 0.2fr 1fr 0.5fr; 
+    grid-template-rows: 0.5fr 0.8fr 0.2fr 0.5fr 0.2fr 0.2fr; 
+    grid-template-areas: 
+      ". logo . studio ."
+      ". impres . adress ."
+      ". help . touch ."
+      ". . . newsletter ."
+      ". links . copyright ."
+      ". . . . ."; 
+  }
+
+  .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+  }
+  .studio {
+    grid-area: studio;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .touch {
+    grid-area: touch;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .impres {
+    grid-area: impres;
+  }
+  .adress {
+    grid-area: adress;
+  }
+  .newsletter {
+    grid-area: newsletter;
+    display: flex;
+    gap: 12px;
+  }
+  .links {
+    grid-area: links;
+    display: flex;
+    align-items: center;
+  }
+  .help {
+    grid-area: help;
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright {
+    grid-area: copyright;
+  }
+}
+
+@media (max-width: 939px) {
+  #footer {
+    
+    height: auto;
+  }
+
+  .gridparent {
+    height: 100%;
+    grid-template-columns: 0.2fr 1fr 0.2fr; 
+    grid-template-rows: 0.5fr 0.8fr 0.2fr 0.5fr 0.2fr 0.5fr 0.6fr 0.2fr 0.5fr 0.5fr 0.8fr 0.5fr; 
+    grid-template-areas: 
+      ". logo ."
+      ". impres ."
+      ". . ."
+      ". help ."
+      ". . ."
+      ". studio ."
+      ". adress ."
+      ". . ."
+      ". touch ."
+      ". newsletter ."
+      ". links ."
+      ". copyright ."; 
+  }
+
+  .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+  }
+  .studio {
+    grid-area: studio;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .touch {
+    grid-area: touch;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .impres {
+    grid-area: impres;
+  }
+  .adress {
+    grid-area: adress;
+  }
+  .newsletter {
+    grid-area: newsletter;
+    display: flex;
+    gap: 12px;
+  }
+  .links {
+    grid-area: links;
+    display: flex;
+    align-items: center;
+  }
+  .help {
+    grid-area: help;
+    display: flex;
+    justify-content: space-bewteen;
+  }
+  .copyright {
+    grid-area: copyright;
+  }
 }
 
 #pfooter {
@@ -117,12 +259,13 @@ input[type="email"] {
 }
 
 #fbutton {
-  height: 20px;
+  height: auto;
   width: 20px;
 }
 
 #flogo {
-  height: 55px;
+  height: auto;
+  width: 50px;
   margin-right: 15px;
   filter: grayscale(1);
 }
