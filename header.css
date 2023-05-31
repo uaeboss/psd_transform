@@ -19,7 +19,6 @@ body {
 }
 
 header {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,6 +105,49 @@ nav li:hover {
     padding: 50px;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  gap: 0 200px;
+  max-width: 1260px;
+  margin: 0 auto;
+  width: 100%;
+}
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #5db3b3;
+}
+
+.nav-right ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: #5db3b3;
+}
+
+.text {
+  margin: 50px 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
 button {
     align-self: center;
     margin-top: 20px;
@@ -118,5 +160,4 @@ button {
     background-image: url(/images/bgk-header.png);
     background-size: unset;
     background-attachment: fixed;
-
 }
