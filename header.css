@@ -33,11 +33,11 @@ header {
     left: 0;
     top: 0;
     color: white;
-
 }
 
 nav {
     display: flex;
+    min-height: 80px;
     justify-content: center;
     align-items: center;
     outline: 0;
@@ -47,8 +47,14 @@ nav {
     margin-top: 10px;
 }
 
-@media (min-width: 1024px) {
-    nav {
+nav img {
+    max-height: 100px;
+    width: auto;
+    margin: 10px;
+}
+
+@media (max-width: 651px) {
+    header {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -58,7 +64,6 @@ nav {
         margin: 0 auto;
         width: 100%;
         justify-content: space-around;
-
     }
 }
 
@@ -70,7 +75,7 @@ nav {
 }
 
 .nav-right ul {
-    display: flex;
+    display: block;
     justify-content: space-around;
     padding: 10px;
     margin: 10px;
@@ -81,12 +86,17 @@ nav {
     gap: 1rem;
 }
 
+.nav-right a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
 nav li {
     cursor: pointer;
     font-size: 10px;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 651px) {
     nav li {
         cursor: pointer;
         font-size: 15px;
@@ -106,49 +116,52 @@ nav li:hover {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: 0;
-  gap: 0 200px;
-  max-width: 1260px;
-  margin: 0 auto;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    outline: 0;
+    justify-content: space-between;
+    max-width: 1260px;
+    margin: 0 auto;
+    width: 100%;
 }
+
 .nav-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: #5db3b3;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    color: #5db3b3;
 }
 
 .nav-right ul {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  margin: 10px;
-  list-style: none;
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    flex-flow: wrap;
+    padding-inline-start: inherit;
 }
 
 nav li {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 nav li:hover {
-  color: #5db3b3;
+    color: #5db3b3;
 }
 
 .text {
-  margin: 50px 120px;
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
+    margin: 50px 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
-.header_btn {
+
+.first-button {
     align-self: center;
     margin-top: 20px;
     margin-bottom: 80px;
@@ -160,4 +173,5 @@ nav li:hover {
     background-image: url(images/bgk-header.png);
     background-size: unset;
     background-attachment: fixed;
+    cursor: pointer;
 }

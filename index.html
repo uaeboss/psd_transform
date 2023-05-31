@@ -14,37 +14,34 @@
 
 <body>
     <header id="home">
-      <nav>
-        <div class="nav-left">
-          <img src="/images/logo.png" alt="Logo" />tajam
-        </div>
-        <div class="nav-right">
-          <ul>
-            <li><a href="#home"></a>Home</li>
-            <li><a href="#about"></a>About</li>
-            <li><a href="#expertise"></a>Expertise</li>
-            <li><a href="#teams"></a>Teams</li>
-            <li><a href="#works"></a>Works</li>
-            <li><a href="#people-say"></a>People Say</li>
-            <li><a href="#contact"></a>Contact</li>
-          </ul>
-        </div>
-      </nav>
-      <div class="text">
-        <h1>We are Awesome Creative Agency</h1>
-        <p>
-          This is Photoshop's version of Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Facere iusto temporibus et eum consequatur eveniet
-          harum officia sapiente odit debitis magnam molestias incidunt magni
-          nisi, natus laboriosam fuga autem aliquam!
-        </p>
 
-        <button class="header_btn">Learn More</button>
+        <nav>
+            <div class="nav-left"> <img src="images/logo.png" alt="Logo">tajam</div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#home"></a>Home</li>
+                    <li><a href="#about"></a>About</li>
+                    <li><a href="#expertise"></a>Expertise</li>
+                    <li><a href="#teams"></a>Teams</li>
+                    <li><a href="#works"></a>Works</li>
+                    <li><a href="#people-say"></a>People Say</li>
+                    <li><a href="#contact"></a>Contact</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text">
+            <h1>We are Awesome Creative Agency</h1>
+            <p>This is Photoshop's version of Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iusto
+                temporibus et eum consequatur eveniet harum officia sapiente odit debitis magnam molestias incidunt
+                magni nisi, natus laboriosam fuga autem aliquam!</p>
+
+            <button class="first-button">Learn More</button>
+
       </div>
     </header>
 
     <main>
-      <section class="firstsection">
+      <section class="firstsection" id="about">
             <div class="firststyle">
                 <div class="company-logo">
                     <img src="images/logo-big.png" alt="Company Logo">
@@ -61,7 +58,7 @@
                     </p>
                     <div class="button">
                         <a href="#">
-                            learen more
+                            learn more
                         </a>
                     </div>
                 </div>
@@ -287,7 +284,16 @@
       </div>
     </footer>
 
-
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
 
 </body>
 
