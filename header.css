@@ -148,7 +148,7 @@ nav li:hover {
   padding: 50px;
 }
 
-/* button {
+.header_btn {
     align-self: center;
     margin-top: 20px;
     margin-bottom: 80px;
@@ -160,4 +160,4 @@ nav li:hover {
     background-image: url(images/bgk-header.png);
     background-size: unset;
     background-attachment: fixed;
-} */
+}
