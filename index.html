@@ -18,7 +18,7 @@
             <div class="nav-left"> <img src="images/logo.png" alt="Logo">tajam</div>
             <div class="nav-right">
                 <ul>
-                    <li><a href="#home" class="active"></a>Home</li>
+                    <li><a href="#home"></a>Home</li>
                     <li><a href="#about"></a>About</li>
                     <li><a href="#expertise"></a>Expertise</li>
                     <li><a href="#teams"></a>Teams</li>
@@ -39,7 +39,7 @@
     </header>
 
     <main>
-      <section class="firstsection">
+      <section class="firstsection" id="about">
             <div class="firststyle">
                 <div class="company-logo">
                     <img src="images/logo-big.png" alt="Company Logo">
@@ -56,7 +56,7 @@
                     </p>
                     <div class="button">
                         <a href="#">
-                            learen more
+                            learn more
                         </a>
                     </div>
                 </div>
@@ -292,7 +292,16 @@
         </div>
       </div>
     </footer>
-
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
 </body>
 
 </html>

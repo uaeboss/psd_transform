@@ -117,17 +117,16 @@ nav li:hover {
 
 nav {
     display: flex;
-    justify-content: center;
     align-items: center;
     outline: 0;
-    gap: 0 200px;
+    justify-content: space-between;
     max-width: 1260px;
     margin: 0 auto;
     width: 100%;
 }
 
 .nav-left {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     color: #5db3b3;
@@ -142,6 +141,8 @@ nav {
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
+    flex-flow: wrap;
+    padding-inline-start: inherit;
 }
 
 nav li {
