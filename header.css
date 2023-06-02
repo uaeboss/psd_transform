@@ -141,12 +141,13 @@ nav img {
     color: white;
 }
 
-nav li {
+nav li a {
     cursor: pointer;
     font-size: 10px;
+    text-decoration: none;
 }
 
-nav li:hover {
+nav li a:hover {
     color: #5db3b3;
 }
 
