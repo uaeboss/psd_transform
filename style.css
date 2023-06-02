@@ -7,6 +7,23 @@ body {
 
 
 /* color var */
+:root {
+  --blubut: #3cebc2;
+  --bgcolor: #fff;
+  --text-in-dark: #f6f6f6;
+  --text-in-light: #202020;
+  --perp: #3A2E60;
+}
+
+/* html set */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bgcolor);
+  font-family: Arial, Helvetica, sans-serif;
 :root{
     --blubut: #3cebc2;
     --bgcolor: #fff;
@@ -43,46 +60,55 @@ footer {
 .container {
   width: 75%;
   margin: 0 auto;
+>>>>>>> main
 }
 
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
 
-.firststyle{
+.firststyle {
   display: grid;
+  grid-template-rows: 1fr;
   background-color: var(--bgcolor);
   grid-template-columns: 40% 60%;
 }
-.company-logo{
+
+.company-logo {
   margin: auto;
 }
-.firstsectioncontent{
+
+.firstsectioncontent {
   padding: 40px 0;
   color: var(--text-in-light);
-
 }
-.first-header{
+
+.first-header {
   text-transform: uppercase;
   word-spacing: 10px;
   font-weight: 100;
   margin-bottom: 30px;
 }
-.firstsectioncontent .firstsectiontext{
+
+.firstsectioncontent .firstsectiontext {
   margin-bottom: 15px;
   font-size: 0.9rem;
   line-height: 20px;
   font-weight: 400;
 }
-.button{
+
+.button {
   margin-top: 2rem;
 }
-.button a{
+
+.button a {
   text-decoration: none;
   color: var(--blubut);
   border: 1px solid var(--blubut);
   padding: 10px 15px;
   text-transform: uppercase;
 }
-
-
 
 /* VIDEO */
 
@@ -123,7 +149,6 @@ footer {
   transition: all 0.2s ease-in-out;
 }
 
-
 /* Expertise */
 
 .expertise {
@@ -136,7 +161,6 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   padding-bottom: 1rem;
-  
 }
 
 .expertise__hgroup-h {
@@ -144,7 +168,6 @@ footer {
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 7px;
-  
 }
 
 .expertise__hgroup::after {
@@ -162,12 +185,11 @@ footer {
 .expertise__container {
   margin: 3rem auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 902px;
   background-color: var(--bgcolor);
   gap: 1px;
   place-content: center;
-  
 }
 
 .expertise__card {
@@ -202,8 +224,6 @@ footer {
   color: var(--text-in-light);
 }
 
-
-
 /* Team */
 
 .team {
@@ -212,6 +232,8 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   padding: 70px 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -220,7 +242,7 @@ footer {
   text-align: center;
   align-items: center;
   margin-top: 30px;
-  color:var(--bgcolor);
+  color: var(--bgcolor);
 }
 
 .lorem {
@@ -233,9 +255,19 @@ footer {
 .ul-team {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   color: var(--bgcolor);
   max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ul-team li {
+  list-style: none;
+  margin: 20px;
+  text-align: center;
+  flex: 0 0 calc(25% - 40px); /* Adjust the percentage based on your desired spacing */
 }
 
 .team-image {
@@ -244,16 +276,12 @@ footer {
   height: 240px;
 }
 
-ul .p {
+.ul-team .p {
   width: 248px;
   height: 70px;
   text-align: center;
   border: var(--bgcolor) 1px solid;
   padding-top: 10px;
-}
-
-ul li {
-  list-style: none;
 }
 
 .become-part {
@@ -267,9 +295,9 @@ ul li {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-
 }
-.p-button button{
+
+.p-button button {
   text-decoration: none;
   color: var(--blubut);
   border: 1px solid var(--blubut);
@@ -280,10 +308,7 @@ ul li {
   background-attachment: fixed;
 }
 
-
-
 /* Last Form */
-
 
 .main-2 {
   display: grid;
@@ -331,6 +356,7 @@ ul li {
   border-radius: 4px;
 }
 
+
 .sub-but{
   width: 45%;
   height: 50px;
@@ -344,6 +370,7 @@ ul li {
   cursor: pointer;
   font-weight: 600;
 }
+
 .clients {
   padding: 50px 0;
   display: flex;
@@ -351,26 +378,28 @@ ul li {
   height: 81%;
 }
 
-.client-titel{
+
+.client-titel {
   margin-bottom: 30px;
   color: var(--text-in-light);
   font-size: 1.5rem;
   text-transform: uppercase;
 }
 
-.logos{
+
+.logos {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 40px;
 }
-.lo img{
+
+.lo img {
   width: 150px;
 }
-  
+
 /* ===========
 Media Query
 ============= */
-
 
 @media (max-width: 651px) {
 
@@ -378,82 +407,99 @@ Media Query
       width:15fr;
       margin: 0 auto;
   }
-  .clients{
+
+  .clients {
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  .client-titel{
+
+  .client-titel {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .logos img{
-      width: 100px;
-      
+
+  .logos img {
+    width: 100px;
   }
+
+  .logo img {
+    width: 6rem;
+    margin-top: 5px;
   .logo img {
       width: 6rem;
       margin-top:5px;
   }
-  
-  .firstsection{
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-  }
-  .firststyle{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      margin-top: 10px;
-      height: 100vh;
 
+  .firstsection {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  .video-main{
-      height: 100vh;
+
+  .firststyle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 100vh;
   }
-  .main-2{
-      display: flex;
-      flex-wrap: wrap;
-      height: auto;
+
+  .video-main {
+    height: 100vh;
   }
-  .logos{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+
+  .main-2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
   }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .expertise__container {
     display: block;
     max-width: fit-content;
     justify-content: center;
     align-content: center;
   }
-  .team-mobile{
+
+  .team-mobile {
     background-size: cover;
     justify-content: center;
     width: fit-content;
   }
-  .team{
-      background-size: cover;
-      max-width: 100%;
-      display: block;
-      justify-content: center;
-  }
-  .ul-team{
+
+  .team {
+    background-size: cover;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 70px 0 0; /* Update the padding */
+  }
 
+  .ul-team {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    color: var(--bgcolor);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px; /* Add margin-top */
   }
-  .ul-team li{
-    margin: 1rem;
+
+  .ul-team li {
+    list-style: none;
+    margin: 20px;
+    text-align: center;
+    flex: 0 0 calc(50% - 40px);
   }
 }
-
-
-
-
-
-
