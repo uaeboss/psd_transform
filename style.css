@@ -209,8 +209,10 @@ footer {
 .team {
   background-image: url(images/bgk-header.png);
   background-size: cover;
-  width: 100%;
-  padding: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 70px 0;
+  align-items: center;
 }
 
 .team h3 {
@@ -230,10 +232,10 @@ footer {
 
 .ul-team {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   color: var(--bgcolor);
   max-width: 100%;
-  margin-right:8rem;
 }
 
 .team-image {
@@ -373,7 +375,7 @@ Media Query
 @media (max-width: 651px) {
 
   .container{
-      width:90%;
+      width:15fr;
       margin: 0 auto;
   }
   .clients{
@@ -423,16 +425,18 @@ Media Query
   }
   .expertise__container {
     display: block;
+    max-width: fit-content;
     justify-content: center;
     align-content: center;
   }
   .team-mobile{
     background-size: cover;
     justify-content: center;
+    width: fit-content;
   }
   .team{
       background-size: cover;
-      width: 100%;
+      max-width: 100%;
       display: block;
       justify-content: center;
   }
@@ -447,3 +451,9 @@ Media Query
     margin: 1rem;
   }
 }
+
+
+
+
+
+
