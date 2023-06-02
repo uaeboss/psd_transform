@@ -1,207 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transform a PSD into a website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform a PSD into a website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+  <header id="home">
 
-    
-    <header></header>
+    <nav>
+      <div class="nav-left"> <img src="images/logo.png" alt="Logo">tajam</div>
+      <div class="nav-right" id="navRight">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <ul>
+          <a href="#home"><li>Home</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#expertise"><li>Expertise</li></a>
+          <a href="#teams"><li>Teams</li></a>
+          <a href="#works"><li>Works</li></a>
+          <a href="#people-say"><li>People Say</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
 
+      </div>
+    </nav>
+    <script src="script.js"></script>
+    <div class="text">
+      <h1>We are Awesome Creative Agency</h1>
+      <p>This is Photoshop's version of Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iusto
+        temporibus et eum consequatur eveniet harum officia sapiente odit debitis magnam molestias incidunt
+        magni nisi, natus laboriosam fuga autem aliquam!</p>
+      <button class="first-button">Learn More</button>
+    </div>
+  </header>
 
+  <main>
+    <section class="firstsection" id="about">
+      <div class="firststyle">
+        <div class="company-logo">
+          <img src="images/logo-big.png" alt="Company Logo">
+        </div>
+        <div class="firstsectioncontent container">
+          <h2 class="first-header">
+            our story
+          </h2>
+          <p class="firstsectiontext">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nam rerum, veniam dolorem eaque, non rem
+            obcaecati autem molestiae commodi, accusantium nemo
+          </p>
+          <p class="firstsectiontext">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nam rerum, veniam dolorem eaque, non rem
+            obcaecati autem molestiae
+          </p>
+          <div class="button">
+            <a href="#">
+              learn more
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <main>
-      <section class="firstsection">
-            <div class="firststyle">
-                <div class="company-logo">
-                    <img src="/images/logo-big.png" alt="Company Logo">
-                </div>
-                <div class="firstsectioncontent container">
-                    <h2 class="first-header">
-                        our story
-                    </h2>
-                    <p class="firstsectiontext">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nam rerum, veniam dolorem eaque, non rem obcaecati autem molestiae commodi, accusantium nemo
-                    </p>
-                    <p class="firstsectiontext">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt nam rerum, veniam dolorem eaque, non rem obcaecati autem molestiae 
-                    </p>
-                    <div class="button">
-                        <a href="#">
-                            learen more
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-            <section class="video video-main">
-                <a href="#">
-                  <div class="play"></div>
-                  <span>Watch our story</span>
-                </a>
-              </section>
-            
-
-              <section class="expertise" id="expertise">
-                <hgroup class="expertise__hgroup">
-                  <h2 class="expertise__hgroup-h">Expertise</h2>
-                  <p class="expertise__hgroup-text">
-                    Lorem ipsum dolor sit amet proin gravida nibh vel velit
-                  </p>
-                </hgroup>
-                <div class="expertise__container">
-                  <div class="expertise__card">
-                    <div class="expertise__card-icon">
-                      <img src="/images/screen.png" alt="">
-                    </div>
-                    <h3 class="expertise__card-heading">Web Design & Development</h3>
-                    <p class="expertise__card-text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui,
-                      pariatur voluptatem. Qui quia ut unde.
-                    </p>
-                  </div>
-                  <div class="expertise__card">
-                    <div class="expertise__card-icon">
-                      <img src="/images/pen.png" alt="">
-                    </div>
-                    <h3 class="expertise__card-heading">Branding Identity</h3>
-                    <p class="expertise__card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deleniti totam voluptatem consectetur eius, repellendus
-                      accusantium?
-                    </p>
-                  </div>
-                  <div class="expertise__card">
-                    <div class="expertise__card-icon">
-                      <img src="/images/mobile.png" alt="">
-                    </div>
-                    <h3 class="expertise__card-heading">Mobile App</h3>
-                    <p class="expertise__card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Suscipit quisquam minima vero animi, hic deleniti.
-                    </p>
-                  </div>
-                  <div class="expertise__card">
-                    <div class="expertise__card-icon">
-                      <img src="/images/graph.png" alt="">
-                    </div>
-                    <h3 class="expertise__card-heading">
-                      Search Engine Optimization
-                    </h3>
-                    <p class="expertise__card-text">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-                      beatae asperiores itaque dicta excepturi alias!
-                    </p>
-                  </div>
-                  <div class="expertise__card">
-                    <div class="expertise__card-icon">
-                      <img src="/images/gameboy.png" alt="">
-                    </div>
-                    <h3 class="expertise__card-heading">Game Development</h3>
-                    <p class="expertise__card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                      repudiandae nobis ipsam expedita debitis porro.
-                    </p>
-                  </div>
-                  <div class="expertise__card">
-                    <div class="expertise__card-icon">
-                      <img src="/images/heart.png" alt="">
-                    </div>
-                    <h3 class="expertise__card-heading">Made with Love</h3>
-                    <p class="expertise__card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                      debitis, quaerat commodi officia magnam aperiam.
-                    </p>
-                  </div>
-                </div>
-              </section>
+    <section class="video video-main">
+      <a href="#">
+        <div class="play"></div>
+        <span>Watch our story</span>
+      </a>
+    </section>
 
 
-              <section class="team team-mobile">
-                <h3>MEET OUR AMAZING TEAM</h3>
-                <P class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit</P>
-                <ul class="ul-team">
-                  <li>
-                    <div class="team-image"> </div>
-                    <div class="p">
-                      <p>OMID</p>
-                      <p>CEO & FOUNDER</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="team-image"></div>
-                    <div class="p">
-                      <p>Malte</p>
-                      <p>ENGINEERING</p>
-                    </div>
-                    
-                  </li>
-                  <li>
-                    <div class="team-image"></div>
-                    <div class="p">
-                      <p>Esra</p>
-                      <p>DESIGNER</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="team-image"></div>
-                    <div class="p">
-                      <p>Patrick</p>
-                      <p>Marketing</p>
-                    </div>
-                  </li>
-                </ul>
-                <div class="p-button">
-                  <P class="become-part">Become part of our dream team, let's join us!</P>
-                  <button class="hiring">WE ARE HIRING</button>
-                </div>
-              </section>
+    <section class="expertise" id="expertise">
+      <hgroup class="expertise__hgroup">
+        <h2 class="expertise__hgroup-h">Expertise</h2>
+        <p class="expertise__hgroup-text">
+          Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        </p>
+      </hgroup>
+      <div class="expertise__container">
+        <div class="expertise__card">
+          <div class="expertise__card-icon">
+            <img src="images/screen.png" alt="">
+          </div>
+          <h3 class="expertise__card-heading">Web Design & Development</h3>
+          <p class="expertise__card-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui,
+            pariatur voluptatem. Qui quia ut unde.
+          </p>
+        </div>
+        <div class="expertise__card">
+          <div class="expertise__card-icon">
+            <img src="images/pen.png" alt="">
+          </div>
+          <h3 class="expertise__card-heading">Branding Identity</h3>
+          <p class="expertise__card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deleniti totam voluptatem consectetur eius, repellendus
+            accusantium?
+          </p>
+        </div>
+        <div class="expertise__card">
+          <div class="expertise__card-icon">
+            <img src="images/mobile.png" alt="">
+          </div>
+          <h3 class="expertise__card-heading">Mobile App</h3>
+          <p class="expertise__card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Suscipit quisquam minima vero animi, hic deleniti.
+          </p>
+        </div>
+        <div class="expertise__card">
+          <div class="expertise__card-icon">
+            <img src="images/graph.png" alt="">
+          </div>
+          <h3 class="expertise__card-heading">
+            Search Engine Optimization
+          </h3>
+          <p class="expertise__card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+            beatae asperiores itaque dicta excepturi alias!
+          </p>
+        </div>
+        <div class="expertise__card">
+          <div class="expertise__card-icon">
+            <img src="images/gameboy.png" alt="">
+          </div>
+          <h3 class="expertise__card-heading">Game Development</h3>
+          <p class="expertise__card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            repudiandae nobis ipsam expedita debitis porro.
+          </p>
+        </div>
+        <div class="expertise__card">
+          <div class="expertise__card-icon">
+            <img src="images/heart.png" alt="">
+          </div>
+          <h3 class="expertise__card-heading">Made with Love</h3>
+          <p class="expertise__card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            debitis, quaerat commodi officia magnam aperiam.
+          </p>
+        </div>
+      </div>
+    </section>
 
 
-              <section>
-                <div class="main-2">
-                    <div class="main-2-forms container"> 
-                        <h3 class="forms-titel">
-                            give us a good news
-                        </h3>
-                        <form action="" id="forms" class="forms">
-                            <input type="name"  name="name" class="text-a" id="" placeholder="Name">
-                            <input type="email" name="email-ad" class="text-a" id="" placeholder="E-mail">
-                            <input type="text" name="Subject" class="text-a" id="" placeholder="Subject">
-                            <input type="text-area" name="text-area" class="text-area" id="text-area" placeholder="Your Massage">
-                            <button class="sub-but">SUBMIT</button>
-                        </form>
-                    </div>
-                     <div class="clients container">
-                         <h3 class="client-titel">
-                             OUR Happy Client
-                         </h3>
-            
-                    <div class="logos">
-                        <div class="lo"><a href="/"><img src="/images/Logo_of_Mango_(new).png" alt=""></a></div>
-                        <div class="lo"><a href="/"><img src="/images/Zara_Logo.png" alt=""></a></div>
-                       <div class="lo"><a href="/"><img src="/images/1280px-Barneys_New_York_Logo.png" alt=""></a></div>
-                       <div class="lo"><a href="/"><img src="/images/1280px-Gucci_Logo.png" alt=""></a></div>
-                       <div class="lo"><a href="/"><img src="/images/Calvin_klein_logo.png" alt=""></a></div>
-                       <div class="lo"><a href="/"><img src="/images/1280px-Logo_NIKE.png" alt=""></a></div>
-                       <div class="lo"><a href="/"><img src="/images/Converse_logo.png" alt=""></a></div>
-                       <div class="lo"><a href="/"><img src="/images/Puma_Logo.png" alt=""></a></div>
-                       <div class="lo"><a href="/"><img src="/images/1280px-Levi's_logo.png" alt=""></a></div>
-                       <div class="lo"><a href="/"><img src="/images/Billabong.png" alt=""></a></div>
-                    </div>
-                </div>
-            </div>
-              </section>
+    <section class="team team-mobile" id="teams">
+      <h3>MEET OUR AMAZING TEAM</h3>
+      <P class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit</P>
+      <ul class="ul-team">
+        <li>
+          <div class="team-image"> </div>
+          <div class="p">
+            <p>OMID</p>
+            <p>CEO & FOUNDER</p>
+          </div>
+        </li>
+        <li>
+          <div class="team-image"></div>
+          <div class="p">
+            <p>Malte</p>
+            <p>ENGINEERING</p>
+          </div>
+
+        </li>
+        <li>
+          <div class="team-image"></div>
+          <div class="p">
+            <p>Esra</p>
+            <p>DESIGNER</p>
+          </div>
+        </li>
+        <li>
+          <div class="team-image"></div>
+          <div class="p">
+            <p>Patrick</p>
+            <p>Marketing</p>
+          </div>
+        </li>
+      </ul>
+      <div class="p-button">
+        <P class="become-part">Become part of our dream team, let's join us!</P>
+        <button class="hiring">WE ARE HIRING</button>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="main-2">
+        <div class="main-2-forms container">
+          <h3 class="forms-titel">
+            give us a good news
+          </h3>
+          <form action="" id="forms" class="forms">
+            <input type="name" name="name" class="text-a" id="" placeholder="Name">
+            <input type="email" name="email-ad" class="text-a" id="" placeholder="E-mail">
+            <input type="text" name="Subject" class="text-a" id="" placeholder="Subject">
+            <input type="text-area" name="text-area" class="text-area" id="text-area" placeholder="Your Massage">
+            <button class="sub-but">SUBMIT</button>
+          </form>
+        </div>
+        <div class="clients container">
+          <h3 class="client-titel">
+            OUR Happy Client
+          </h3>
+
+          <div class="logos">
+            <div class="lo"><a href="/"><img src="images/Logo_of_Mango_(new).png" alt=""></a></div>
+            <div class="lo"><a href="/"><img src="images/Zara_Logo.png" alt=""></a></div>
+            <div class="lo"><a href="/"><img src="images/1280px-Barneys_New_York_Logo.png" alt=""></a></div>
+            <div class="lo"><a href="/"><img src="images/1280px-Gucci_Logo.png" alt=""></a></div>
+            <div class="lo"><a href="/"><img src="images/Calvin_klein_logo.png" alt=""></a></div>
+            <div class="lo"><a href="/"><img src="images/1280px-Logo_NIKE.png" alt=""></a></div>
+            <div class="lo"><a href="/"><img src="images/Converse_logo.png" alt=""></a></div>
+            <div class="lo"><a href="/"><img src="images/Puma_Logo.png" alt=""></a></div>
+            <div class="lo"><a href="/"><img src="images/1280px-Levi's_logo.png" alt=""></a></div>
+            <div class="lo"><a href="/"><img src="images/Billabong.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer id="contact">
+    <div class="wrapper" id="footer">
+      <div class="gridparent">
+        <div class="logo">
+          <img src="images/logo.png" id="flogo" />
+          <p>tajam</p>
+        </div>
+        <div class="studio">OUR STUDIO</div>
+        <div class="touch">STAY IN TOUCH</div>
+        <div class="impres">
+          <p id="pfooter">
+            lorem quis bibendum auctor, nisi elit consequant ipsum, nec
+            sagittis semnibh elit. Duis sed odio sit amet auctror a ornare
+            odio non mauris vitae erat in elit
+          </p>
+        </div>
+        <div class="adress">
+          <p id="pfooter">
+            Ruko cucruk, Jl. Radio luar dalem jos<br />
+            No.12 - 13, Kalideres - Jakarta Barat<br />
+            11480 - Indonesia
+          </p>
+        </div>
+        <div class="newsletter">
+          <div class="alignbutton"><input type="email" placeholder="Subscribe our newsletter" />
+            <button class="news__btn">
+              <img src="images/paper122.png" alt="send button" id="fbutton" />
 
-    <footer></footer>
+            </button></div>
+        </div>
+        <div class="links"><a href="https://de-de.facebook.com/" target="_blank"><img src="images/facebook.png"
+              alt="facebook" /></a>
+          <a href="" target="_blank"><img src="images/twitter.png" alt="twitter" /></a>
+          <a href="" target="_blank"><img src="images/dribbble.png" alt="dribble" /></a>
+          <a href="" target="_blank"><img src="images/instagram.png" alt="instagram" /></a>
+          <a href="" target="_blank"><img src="images/gplus.png" alt="googleplus" /></a>
+          <a href="" target="_blank"><img src="images/youtube.png" alt="youtube" /></a></div>
+        <div class="help"><a href="#help">
+            <p id="pfooter">HELP</p>
+          </a>
 
-
+          <a href="#terms">
+            <p id="pfooter">TERMS AND CONDITIONS</p>
+          </a>
+          <a href="privacy">
+            <p id="pfooter">PRIVACY</p>
+          </a></div>
+        <div class="copyright" id="copyright">Copyright &#169; 2015 - Tajem Creative</div>
+        <div class="blankleft"></div>
+        <div class="blanktop"></div>
+        <div class="blankright"></div>
+        <div class="blankmid"></div>
+        <div class="blankbot"></div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

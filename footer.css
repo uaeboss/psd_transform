@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+footer {
+  background-color: #fff;
+}
+
+#footer {
+  background-image: url(images/bgk-footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100vw;
+  color: #fff;
+  font-family: sans-serif;
+}
+.gridparent {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.8fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1.5fr 0.8fr 1.2fr;
+  grid-column-gap: 0.8%;
+  grid-row-gap: 5px;
+  grid-template-areas:
+    "blanktop blanktop blanktop blanktop blanktop"
+    "blankleft logo studio touch blankright"
+    "blankleft impres adress newsletter blankright"
+    "blankleft blankmid blankmid links blankright"
+    "blankleft help blankbot copyright blankright";
+}
+
+#contact {}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  font-size: 1.8em;
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
+}
+.studio {
+  grid-area: studio;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.touch {
+  grid-area: touch;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.impres {
+  grid-area: impres;
+}
+.adress {
+  grid-area: adress;
+}
+.newsletter {
+  grid-area: newsletter;
+  display: flex;
+  gap: 12px;
+}
+.links {
+  grid-area: links;
+}
+.help {
+  grid-area: help;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  grid-area: copyright;
+}
+.blankleft {
+  grid-area: blankleft;
+}
+.blanktop {
+  grid-area: blanktop;
+}
+.blankright {
+  grid-area: blankright;
+}
+.blankmid {
+  grid-area: blankmid;
+}
+.blankbot {
+  grid-area: blankbot;
+}
+
+.alignbutton {
+  height: auto;
+  display: flex;
+}
+
+@media (max-width: 1500px) {
+ 
+  #footer {
+    height: auto;
+  }
+
+  .gridparent {
+    height: 100%;
+    grid-template-columns: 0.5fr 1fr 0.2fr 1fr 0.5fr; 
+    grid-template-rows: 0.5fr 0.8fr 0.2fr 0.5fr 0.2fr 0.2fr; 
+    grid-template-areas: 
+      ". logo . studio ."
+      ". impres . adress ."
+      ". help . touch ."
+      ". . . newsletter ."
+      ". links . copyright ."
+      ". . . . ."; 
+  }
+
+  .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+  }
+  .studio {
+    grid-area: studio;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .touch {
+    grid-area: touch;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .impres {
+    grid-area: impres;
+  }
+  .adress {
+    grid-area: adress;
+  }
+  .newsletter {
+    grid-area: newsletter;
+    display: flex;
+    gap: 12px;
+  }
+  .links {
+    grid-area: links;
+    display: flex;
+    align-items: center;
+  }
+  .help {
+    grid-area: help;
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright {
+    grid-area: copyright;
+  }
+}
+
+@media (max-width: 939px) {
+  #footer {
+    height: auto;
+  }
+
+  .gridparent {
+    height: 100%;
+    grid-template-columns: 0.2fr 1fr 0.2fr; 
+    grid-template-rows: 0.5fr 0.8fr 0.2fr 0.5fr 0.2fr 0.5fr 0.6fr 0.2fr 0.5fr 0.5fr 0.8fr 0.5fr; 
+    grid-template-areas: 
+      ". logo ."
+      ". impres ."
+      ". . ."
+      ". help ."
+      ". . ."
+      ". studio ."
+      ". adress ."
+      ". . ."
+      ". touch ."
+      ". newsletter ."
+      ". links ."
+      ". copyright ."; 
+  }
+
+  .logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+  }
+  .studio {
+    grid-area: studio;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .touch {
+    grid-area: touch;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .impres {
+    grid-area: impres;
+  }
+  .adress {
+    grid-area: adress;
+  }
+  .newsletter {
+    grid-area: newsletter;
+    gap: 12px;
+  }
+  .links {
+    grid-area: links;
+    display: flex;
+    align-items: center;
+  }
+  .help {
+    grid-area: help;
+    display: flex;
+    justify-content: space-bewteen;
+  }
+  .copyright {
+    grid-area: copyright;
+  }
+}
+
+#pfooter {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.news__btn {
+  border: none;
+  height: 34px;
+  outline: none;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+  width: 50px;
+  margin: 0 0 0 12px;
+}
+
+input[type="email"] {
+  border: 0;
+  outline: 0;
+  border: 1px solid #8f94a1;
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+#fbutton {
+  height: auto;
+  width: 20px;
+  vertical-align: middle;
+}
+
+#flogo {
+  height: auto;
+  width: 50px;
+  margin-right: 15px;
+  filter: grayscale(1);
+}
+
+#copyright {
+  font-size: 0.7em;
+}
