@@ -52,6 +52,11 @@ nav img {
     width: auto;
     margin: 10px;
 }
+a {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
 
 @media (max-width: 651px) {
     header {
