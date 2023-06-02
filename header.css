@@ -145,6 +145,7 @@ nav li a {
     cursor: pointer;
     font-size: 10px;
     text-decoration: none;
+    color: #fff;
 }
 
 nav li a:hover {
